@@ -1,9 +1,9 @@
 def userEntidade(db_item) -> dict:
     return {
         "id": str(db_item["_id"]),
-        "nome": db_item["nome"],
+        "nome": db_item["name"],
         "email": db_item["email"],
-        "senha": db_item["senha"],
+        "senha": db_item["password"],
     }
 
 def listaUserEntidade (db_items) -> list:
